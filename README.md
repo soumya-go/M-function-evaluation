@@ -51,4 +51,5 @@ python M_parameter_test.py
 
 Additionally, if you are specifically interested in the zero albedo case, you can use the simplified analytical version:
 
+```bash
 python M_func_albdo_0.py
