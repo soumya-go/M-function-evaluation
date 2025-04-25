@@ -15,7 +15,7 @@ All files must be located in the same folder for the code to work properly.
 
 <div style="flex: 1; padding: 10px;">
 
-### Example Plot
+### Example Plot for Zero Albedo
 
 <img src="M_vs_mu_zeroalbdo.jpg" alt="M vs μ (Zero Albedo)" width="100%">
 
@@ -23,7 +23,7 @@ All files must be located in the same folder for the code to work properly.
 
 <div style="flex: 1; padding: 10px; font-size: 12px;">
 
-### Example Table
+### Example Table corresponding to Zero Albedo 
 
 | μ    | U=0.1  | U=0.2  | U=0.3  | U=0.4  | U=0.5  | U=0.6  | U=0.7  |
 |:----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
