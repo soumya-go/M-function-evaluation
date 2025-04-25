@@ -22,7 +22,7 @@ for i in range(len(U)):
 
 mu = np.array([0]+list(mu))
 H = np.ones(len(mu))# Chandrasekhar's H-function for no scattering albedo.
-# CAUTION: mu=0 is included in the mu array. The calling of m-function is not permitted afterwards.
+# CAUTION: mu=0 is included in the mu array. The calling of M-function is not permitted afterwards.
 
 #"""
 #================================================
