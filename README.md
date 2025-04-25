@@ -1,16 +1,47 @@
 # M-function Evaluation
 
-This code evaluates the values of the M(μ, U, ω)-function in all of its parameter space.  
-The zero albedo case is the only possible analytical solution, whereas the `M_func.py` script is the most general version to calculate the triple-valued function using the Gauss–Legendre formula. The dependencies are Python with SciPy and NumPy installed in the system.
+This repository evaluates the values of the M(μ, U, ω) function across its entire parameter space.
 
-The `M_parameter_test.py` script provides a handle to the original `M_func.py` evaluation code.
+The **zero albedo** case allows an analytical solution. For the **general case**, `M_func.py` uses Gauss–Legendre quadrature to compute the triple-valued function numerically.
 
-A simplistic script for the analytical case is given in the script `M_func_albdo_0.py`.  
-An example plot can be found below for the zero albedo case:
+---
+
+## Example Plot
+
+Below is the behavior of the M-function for the zero albedo case:
 
 ![M vs μ (Zero Albedo)](M_vs_mu_zeroalbdo.jpg)
 
-We have also added the example table:
+---
+
+## Files
+
+All the files must be located in the **same folder** for the code to work properly:
+
+- **`M_func.py`**: Core function evaluator using Gauss–Legendre quadrature.
+- **`M_parameter_test.py`**: Test script to interact with `M_func.py`.
+- **`M_func_albdo_0.py`**: Simplified script for the zero albedo (ω = 0) analytical case.
+- **`M_vs_mu_zeroalbdo.jpg`**: Example plot for the zero albedo case (μ vs M-function).
+- **`example_table.tex`**: LaTeX code containing the example table for the analytical solution.
+
+A simple script for the analytical (zero albedo) case is provided in `M_func_albdo_0.py`.  
+An example plot is shown above (`M_vs_mu_zeroalbdo.jpg`), and the corresponding table is included in `example_table.tex`.
+
+---
+
+## Dependencies
+
+This project requires:
+
+- [Python 3](https://www.python.org/)
+- [NumPy](https://numpy.org/)
+- [SciPy](https://scipy.org/)
+
+Install the dependencies using pip:
+
+```bash
+pip install numpy scipy
+
 
 ## Example Table (Zero Albedo Case)
 
