@@ -11,21 +11,25 @@ All files must be located in the same folder for the code to work properly.
 
 ---
 
-## Example Plot
+<div style="display: flex; align-items: flex-start;">
 
-Below is an example plot for the zero albedo case:
+<div style="flex: 1; padding: 10px;">
 
-![M vs μ (Zero Albedo)](M_vs_mu_zeroalbdo.jpg)
+### Example Plot
 
----
+<img src="M_vs_mu_zeroalbdo.jpg" alt="M vs μ (Zero Albedo)" width="100%">
 
-## Example Table
+</div>
+
+<div style="flex: 1; padding: 10px; font-size: 12px;">
+
+### Example Table
 
 | μ    | U=0.1  | U=0.2  | U=0.3  | U=0.4  | U=0.5  | U=0.6  | U=0.7  |
 |:----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 | 0    | 1      | 1      | 1      | 1      | 1      | 1      | 1      |
 | 0.05 | 1.0314 | 1.0648 | 1.1005 | 1.1387 | 1.1796 | 1.2235 | 1.2708 |
-| 0.1  | 1.0504 | 1.1061 | 1.1681 | 1.2374 | 1.3154 | 1.404  | 1.5054 |
+| 0.1  | 1.0504 | 1.1061 | 1.1681 | 1.2374 | 1.3154 | 1.4040 | 1.5054 |
 | 0.15 | 1.0651 | 1.1392 | 1.2245 | 1.3235 | 1.4399 | 1.5789 | 1.7475 |
 | 0.2  | 1.0772 | 1.1673 | 1.2739 | 1.4019 | 1.5585 | 1.7545 | 2.0068 |
 | 0.25 | 1.0875 | 1.1918 | 1.3183 | 1.4747 | 1.6733 | 1.9336 | 2.2899 |
@@ -44,6 +48,9 @@ Below is an example plot for the zero albedo case:
 | 0.9  | 1.1554 | 1.3680 | 1.6764 | 2.1645 | 3.0534 | 5.1811 | 17.091 |
 | 0.95 | 1.1583 | 1.3760 | 1.6946 | 2.2052 | 3.1562 | 5.5494 | 22.953 |
 | 1    | 1.1609 | 1.3836 | 1.7120 | 2.2448 | 3.2589 | 5.9445 | 33.791 |
+
+</div>
+</div>
 
 ---
 
