@@ -53,6 +53,12 @@ Additionally, if you are specifically interested in the zero albedo case, you ca
 
 python M_func_albdo_0.py
 
+## Example Plot
+
+The following plot illustrates the behavior of the M-function for the zero albedo case:
+
+![M vs μ (Zero Albedo)](M_vs_mu_zeroalbdo.jpg)
+
 
 ## Files
 
