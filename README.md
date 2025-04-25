@@ -48,3 +48,7 @@ You can run the parameter test script to evaluate the M-function for different p
 
 ```bash
 python M_parameter_test.py
+
+Additionally, if you are specifically interested in the zero albedo case, you can use the simplified analytical version:
+
+python M_func_albdo_0.py
