@@ -51,5 +51,27 @@ python M_parameter_test.py
 
 Additionally, if you are specifically interested in the zero albedo case, you can use the simplified analytical version:
 
-```bash
 python M_func_albdo_0.py
+
+
+## Files
+
+All the files mentioned below should be located in the **same folder** for the code to work properly.
+
+- **`M_func.py`**: Core function evaluator using Gauss–Legendre quadrature.
+- **`M_parameter_test.py`**: Test script to interact with `M_func.py`.
+- **`M_func_albdo_0.py`**: Simplified script for the zero albedo case with an analytical solution.
+- **`M_vs_mu_zeroalbdo.jpg`**: Example plot for the zero albedo case (μ vs M-function).
+- **`example_table.tex`**: LaTeX code for the table (Zero albedo case).
+
+## Dependencies
+
+This project requires Python 3 and the following Python packages:
+
+- [NumPy](https://numpy.org/)
+- [SciPy](https://scipy.org/)
+
+You can install these dependencies using pip:
+
+```bash
+pip install numpy scipy
