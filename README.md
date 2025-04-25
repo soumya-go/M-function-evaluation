@@ -1,31 +1,49 @@
 # M-function Evaluation
 
-This repository evaluates the values of the M(μ, U, ω) function across its entire parameter space.
+This code evaluates the values of the M(μ, U, ω)-function in all of its parameter space.  
+The zero albedo case is the only possible analytical solution, whereas the `M_func.py` script is the most general version to calculate the triple-valued function using the Gauss–Legendre formula. The dependencies are Python with SciPy and NumPy installed in the system.
 
-The **zero albedo** case allows an analytical solution. For the **general case**, `M_func.py` uses Gauss–Legendre quadrature to compute the triple-valued function numerically.
+The `M_parameter_test.py` script provides a handle to the original `M_func.py` evaluation code.
+
+A simplistic script for the analytical case is given in `M_func_albdo_0.py`.
+
+All files must be located in the same folder for the code to work properly.
 
 ---
 
 ## Example Plot
 
-Below is the behavior of the M-function for the zero albedo case:
+Below is an example plot for the zero albedo case:
 
 ![M vs μ (Zero Albedo)](M_vs_mu_zeroalbdo.jpg)
 
 ---
 
-## Files
+## Example Table
 
-All the files must be located in the **same folder** for the code to work properly:
-
-- **`M_func.py`**: Core function evaluator using Gauss–Legendre quadrature.
-- **`M_parameter_test.py`**: Test script to interact with `M_func.py`.
-- **`M_func_albdo_0.py`**: Simplified script for the zero albedo (ω = 0) analytical case.
-- **`M_vs_mu_zeroalbdo.jpg`**: Example plot for the zero albedo case (μ vs M-function).
-- **`example_table.tex`**: LaTeX code containing the example table for the analytical solution.
-
-A simple script for the analytical (zero albedo) case is provided in `M_func_albdo_0.py`.  
-An example plot is shown above (`M_vs_mu_zeroalbdo.jpg`), and the corresponding table is included in `example_table.tex`.
+| μ    | U=0.1  | U=0.2  | U=0.3  | U=0.4  | U=0.5  | U=0.6  | U=0.7  |
+|:----:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| 0    | 1      | 1      | 1      | 1      | 1      | 1      | 1      |
+| 0.05 | 1.0314 | 1.0648 | 1.1005 | 1.1387 | 1.1796 | 1.2235 | 1.2708 |
+| 0.1  | 1.0504 | 1.1061 | 1.1681 | 1.2374 | 1.3154 | 1.404  | 1.5054 |
+| 0.15 | 1.0651 | 1.1392 | 1.2245 | 1.3235 | 1.4399 | 1.5789 | 1.7475 |
+| 0.2  | 1.0772 | 1.1673 | 1.2739 | 1.4019 | 1.5585 | 1.7545 | 2.0068 |
+| 0.25 | 1.0875 | 1.1918 | 1.3183 | 1.4747 | 1.6733 | 1.9336 | 2.2899 |
+| 0.3  | 1.0965 | 1.2135 | 1.3586 | 1.5430 | 1.7854 | 2.1181 | 2.6032 |
+| 0.35 | 1.1044 | 1.2330 | 1.3956 | 1.6077 | 1.8956 | 2.3093 | 2.9539 |
+| 0.4  | 1.1114 | 1.2507 | 1.4299 | 1.6691 | 2.0044 | 2.5083 | 3.3506 |
+| 0.45 | 1.1177 | 1.2668 | 1.4618 | 1.7278 | 2.1121 | 2.7162 | 3.8044 |
+| 0.5  | 1.1234 | 1.2816 | 1.4916 | 1.7839 | 2.2188 | 2.9340 | 4.3295 |
+| 0.55 | 1.1286 | 1.2952 | 1.5196 | 1.8378 | 2.3248 | 3.1628 | 4.9454 |
+| 0.6  | 1.1334 | 1.3079 | 1.5458 | 1.8896 | 2.4301 | 3.4036 | 5.6785 |
+| 0.65 | 1.1378 | 1.3196 | 1.5706 | 1.9395 | 2.5349 | 3.6579 | 6.5668 |
+| 0.7  | 1.1418 | 1.3306 | 1.5941 | 1.9876 | 2.6393 | 3.9267 | 7.6662 |
+| 0.75 | 1.1456 | 1.3408 | 1.6162 | 2.0341 | 2.7433 | 4.2117 | 9.0631 |
+| 0.8  | 1.1491 | 1.3504 | 1.6373 | 2.0790 | 2.8469 | 4.5145 | 10.898 |
+| 0.85 | 1.1524 | 1.3595 | 1.6574 | 2.1224 | 2.9503 | 4.8370 | 13.417 |
+| 0.9  | 1.1554 | 1.3680 | 1.6764 | 2.1645 | 3.0534 | 5.1811 | 17.091 |
+| 0.95 | 1.1583 | 1.3760 | 1.6946 | 2.2052 | 3.1562 | 5.5494 | 22.953 |
+| 1    | 1.1609 | 1.3836 | 1.7120 | 2.2448 | 3.2589 | 5.9445 | 33.791 |
 
 ---
 
@@ -33,43 +51,11 @@ An example plot is shown above (`M_vs_mu_zeroalbdo.jpg`), and the corresponding 
 
 This project requires:
 
-- [Python 3](https://www.python.org/)
-- [NumPy](https://numpy.org/)
-- [SciPy](https://scipy.org/)
+- Python 3
+- NumPy
+- SciPy
 
-Install the dependencies using pip:
+Install using pip:
 
 ```bash
 pip install numpy scipy
-
-
-## Example Table (Zero Albedo Case)
-
-An example table showing the evaluated M-function values for various values of **μ** and **U** at zero albedo:
-
-| μ     | U=0.1   | U=0.2   | U=0.3   | U=0.4   | U=0.5   | U=0.6   | U=0.7    |
-|-------|---------|---------|---------|---------|---------|---------|----------|
-| 0     | 1       | 1       | 1       | 1       | 1       | 1       | 1        |
-| 0.05  | 1.0314  | 1.06484 | 1.10052 | 1.13867 | 1.17956 | 1.2235  | 1.27084  |
-| 0.1   | 1.05037 | 1.10609 | 1.16805 | 1.23737 | 1.31543 | 1.404   | 1.50536  |
-| 0.15  | 1.06508 | 1.13923 | 1.22447 | 1.3235  | 1.43995 | 1.57888 | 1.74747  |
-| 0.2   | 1.0772  | 1.16733 | 1.2739  | 1.4019  | 1.55849 | 1.75445 | 2.00679  |
-| 0.25  | 1.08751 | 1.19182 | 1.31825 | 1.47468 | 1.67325 | 1.93361 | 2.28992  |
-| 0.3   | 1.09647 | 1.21353 | 1.35859 | 1.54302 | 1.7854  | 2.11811 | 2.60323  |
-| 0.35  | 1.10436 | 1.23303 | 1.39564 | 1.60766 | 1.89564 | 2.3093  | 2.9539   |
-| 0.4   | 1.11138 | 1.25069 | 1.42993 | 1.66913 | 2.00443 | 2.50832 | 3.35061  |
-| 0.45  | 1.1177  | 1.26681 | 1.46182 | 1.72779 | 2.11208 | 2.7162  | 3.80438  |
-| 0.5   | 1.12342 | 1.2816  | 1.49161 | 1.78395 | 2.2188  | 2.93399 | 4.32954  |
-| 0.55  | 1.12863 | 1.29524 | 1.51955 | 1.83783 | 2.32477 | 3.16276 | 4.94537  |
-| 0.6   | 1.1334  | 1.30787 | 1.54583 | 1.88964 | 2.43012 | 3.40364 | 5.67848  |
-| 0.65  | 1.13779 | 1.31962 | 1.57062 | 1.93953 | 2.53494 | 3.65785 | 6.56676  |
-| 0.7   | 1.14184 | 1.33057 | 1.59405 | 1.98764 | 2.6393  | 3.92672 | 7.66619  |
-| 0.75  | 1.1456  | 1.34082 | 1.61625 | 2.03409 | 2.74328 | 4.21173 | 9.06312  |
-| 0.8   | 1.14909 | 1.35043 | 1.63732 | 2.07898 | 2.84693 | 4.51453 | 10.8982  |
-| 0.85  | 1.15235 | 1.35947 | 1.65736 | 2.12242 | 2.95028 | 4.83696 | 13.4171  |
-| 0.9   | 1.1554  | 1.36798 | 1.67643 | 2.16448 | 3.05337 | 5.18112 | 17.0911  |
-| 0.95  | 1.15826 | 1.37602 | 1.69463 | 2.20523 | 3.15623 | 5.54938 | 22.9532  |
-| 1     | 1.16094 | 1.38362 | 1.712   | 2.24476 | 3.25889 | 5.94448 | 33.7907  |
-
-## Usage
-
