@@ -66,3 +66,10 @@ Install using pip:
 
 ```bash
 pip install numpy scipy
+
+
+**# Citation**
+
+If you find this work useful then please cite the papers listed here.
+Soumya Sengupta, ApJ, 2021
+Soumya Sengupta, ApJ, 2022 (to be updated by a hyperlink)
