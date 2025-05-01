@@ -10,6 +10,10 @@ A simplistic script for the analytical case is given in `M_func_albdo_0.py`.
 All files must be located in the same folder for the code to work properly.
 
 
+# Citation
+
+[Link Text](https://iopscience.iop.org/article/10.3847/1538-4357/ac8987/pdf)
+
 ---
 
 <div style="display: flex; align-items: flex-start;">
@@ -69,7 +73,5 @@ Install using pip:
 pip install numpy scipy
 
 
-# Citation
-markdown
-[Link Text](https://iopscience.iop.org/article/10.3847/1538-4357/ac8987/pdf)
+
 
