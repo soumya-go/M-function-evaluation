@@ -69,6 +69,14 @@ pip install numpy scipy
 
 
 **# Citation**
+
+## 📚 Full Citation List
+
+📄 [Download CITATIONS.docx](https://github.com/soumya-go/M-function-evaluation/edit/main/CITATIONS.docx)
+
+
+
+
 ## 📚 Full Citation List
 
 📄 [Click here to view all references](./CITATIONS.docx)
