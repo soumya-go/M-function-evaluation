@@ -10,9 +10,13 @@ A simplistic script for the analytical case is given in `M_func_albdo_0.py`.
 All files must be located in the same folder for the code to work properly.
 
 
+# Related papers
+[Sengupta 2022, ApJ, 936, 139](https://iopscience.iop.org/article/10.3847/1538-4357/ac8987/pdf)
+
+
 # Citation
 
-[Link Text](https://iopscience.iop.org/article/10.3847/1538-4357/ac8987/pdf)
+
 
 ---
 
