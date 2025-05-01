@@ -70,47 +70,4 @@ pip install numpy scipy
 
 **# Citation**
 
-## 📚 Full Citation List
-
-📄 [Download CITATIONS.docx](https://github.com/soumya-go/M-function-evaluation/edit/main/CITATIONS.docx)
-
-
-
-
-## 📚 Full Citation List
-
-📄 [Click here to view all references](./CITATIONS.docx)
-
-
-
-If you find this work useful then please cite the papers listed here.
-Soumya Sengupta, ApJ, 2021
-Soumya Sengupta, ApJ, 2022 (to be updated by a hyperlink)
-
-📄 [CITATIONS.docx](CITATIONS.docx)
-
-
-## 📖 Citation
-
-If you use this work, please cite the following paper:
-
-**Sengupta, S. (2022).**  
-*Atmospheric Thermal Emission Effect on Chandrasekhar’s Finite Atmosphere Problem*  
-The Astrophysical Journal, **936**(1), 139.  
-[https://doi.org/10.3847/1538-4357/ac8987](https://doi.org/10.3847/1538-4357/ac8987)
-
-📄 **BibTeX**:
-```bibtex
-@article{sengupta2022atmospheric,
-  title={Atmospheric Thermal Emission Effect on Chandrasekhar’s Finite Atmosphere Problem},
-  author={Sengupta, Soumya},
-  journal={The Astrophysical Journal},
-  volume={936},
-  number={1},
-  pages={139},
-  year={2022},
-  publisher={IOP Publishing},
-  doi={10.3847/1538-4357/ac8987},
-  url={https://doi.org/10.3847/1538-4357/ac8987}
-}
-
+[Link Text](https://iopscience.iop.org/article/10.3847/1538-4357/ac8987/pdf)
