@@ -69,7 +69,7 @@ Install using pip:
 pip install numpy scipy
 
 
-
+# Citation
 markdown
 [Link Text](https://iopscience.iop.org/article/10.3847/1538-4357/ac8987/pdf)
 
