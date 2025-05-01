@@ -69,6 +69,11 @@ pip install numpy scipy
 
 
 **# Citation**
+## 📚 Full Citation List
+
+📄 [Click here to view all references](./CITATIONS.docx)
+
+
 
 If you find this work useful then please cite the papers listed here.
 Soumya Sengupta, ApJ, 2021
